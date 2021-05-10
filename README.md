@@ -7,14 +7,16 @@ In this project folder you can anticipate the our data processing, data analysis
 * **Data Source**: SEER (Surveillance, Epidemiology, and End Results) National Cancer registry data was used. SEER 18 regs with additional treatment fields data set were downloaded using SEER stat software version 8.3.6. The database was (1975-2016 varying) extracted into the comma-delimited format. 
 * **Steps involved** 
   1. Data processing and dependent variable creation
-  2. Data visualization using Tableau
-  3. Data analysis using RStudio and SQL
+      * [Preprocessing](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/master/source_code/Data_processing/Preprocessing.py)
+      * [Dummy Variables](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/master/source_code/Data_processing/dummies.py)
+  3. Data visualization using Tableau
+  4. Data analysis using RStudio and SQL
       * [Simple Logistic Regression](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/4586576adbf11800d07c2504787d39c9a2a516d7/source_code/Risk_factor_analysis/Uni_Regression.R)
       * [Multiple Logistic Regression](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/4586576adbf11800d07c2504787d39c9a2a516d7/source_code/Risk_factor_analysis/Multi_Regression.R)
       * Descriptive Statistcs Summary
         * [Numerical](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/4586576adbf11800d07c2504787d39c9a2a516d7/source_code/Descriptive_statistics/descriptive_statistics_for_numerical_variables.sql)
         * [Categorical](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/4586576adbf11800d07c2504787d39c9a2a516d7/source_code/Descriptive_statistics/descriptive_statistics_for_categorical_variables.sql)
-  4. Predictive modelling and comparision of the model performance uisng different algorithms
+  5. Predictive modelling and comparision of the model performance uisng different algorithms
       * **Decision Tree Classifier**
         * [No sampling](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/4586576adbf11800d07c2504787d39c9a2a516d7/source_code/Machine_learning/DT.py)
         * [Over sampling](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/master/source_code/Machine_learning/DT_oversampling.py)
