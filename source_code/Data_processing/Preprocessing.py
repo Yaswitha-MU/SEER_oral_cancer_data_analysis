@@ -1,12 +1,18 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Sep  1 13:27:33 2020
-
-@author: USER
+Created on Tue Oct 20 17:13:55 2020
+Last Modified Date - 18/02/2021
+@author: Yaswitha Jampani
+Purpose: This script is to create the dependent variable and clean the data set appropriately
+Source: SEER_final_dataset.csv
 """
 
+#imported relevant packages
 import pandas as pd 
-df= pd.read_csv(r"C:\Users\USER\Desktop\Thesis\seer stat.csv") 
+
+#loading the csv file
+df= pd.read_csv(r"file_path.csv")
+
 # Merging the tumor size columns 
 df["Tumor_size"]= ""
 for index,row in df.iterrows():
@@ -68,14 +74,8 @@ for index,row in df.iterrows():
 
 #Dropping unwanted columns and rows with least clinical importance and null values 
 df2=df.drop(['CS tumor size (2004-2015)',"ICD-O-3 Hist/behav",'Year of diagnosis', 'EOD 10 - size (1988-2003)',"Tumor Size Summary (2016+)","EOD 4 - size (1983-1987)",'Regional nodes examined (1988+)','Site recode ICD-O-3/WHO 2008', 'Primary Site - labeled','Race/ethnicity', 'Type of follow-up expected', 'SEER cause-specific death classification',"Vital status recode (study cutoff used)","Survival months"], axis=1)
-
 data= df2[(df2['Race recode (White, Black, Other)']== 9) |(df2['Marital status at diagnosis']== 9)| (df2['Grade']== 9) |(df2['Grade']== 5) |(df2['Grade']== 6) |(df2['Grade']== 7) |(df2['Grade']== 8) | (df2['Laterality']== 9) | (df2['Diagnostic Confirmation']== 9) | (df2['Behavior code ICD-O-3']== 0) | (df2['Reason no cancer-directed surgery']== 9) | (df2['Radiation recode']== 0) |(df2['Radiation recode']== 8) | (df2['Sequence number']== 60) | (df2['Sequence number']== 61) | (df2['Sequence number']== 62) |(df2['Sequence number']== 63) | (df2['Sequence number']== 64) | (df2['Sequence number']== 65) | (df2['Sequence number']== 66) | (df2['Sequence number']== 67) | (df2['Sequence number']== 68) | (df2['Sequence number']== 69) | (df2['Sequence number']== 70) | (df2['Sequence number']== 75) |(df2['Sequence number']== 88) | (df2['Sequence number']== 99) | (df2['First malignant primary indicator']== 0) | (df2['Total number of in situ/malignant tumors for patient']== 99) | (df2['Total number of benign/borderline tumors for patient']== 99)|(df2['Regional nodes positive (1988+)']== 'Blank(s)')|(df2['Tumor_size']== 'Blank(s)')].index
 df2.drop(data, inplace = True)
-
-
-
-
-
 
 
 # converting primary site into categorial variables with less codes
@@ -141,4 +141,4 @@ for index,row in df6.iterrows():
     else:
         df6.at[index,"Age at diagnosis"]= 2
 '''
-df5.to_csv(r"C:\Users\USER\Desktop\seer_preprocessed.csv")
+df5.to_csv(r"file_path.csv")
