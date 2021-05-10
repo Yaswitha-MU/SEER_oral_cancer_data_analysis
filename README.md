@@ -1,4 +1,4 @@
-## Title- Five-Year Survivability of Lip, Oral Cavity, and Pharyngeal Cancer: A Risk Factor Analysis and Predictive Machine Learning Approach using SEER Database
+## Five-Year Survivability of Lip, Oral Cavity, and Pharyngeal Cancer: A Risk Factor Analysis and Predictive Machine Learning Approach using SEER Database
 ### Overview
 This project mainly focused on analyzing the five-year Lip, Oral cavity and Pharyngeal cancer survival using the national cnacer registry data; SEER. This data set has the following advantages: (a) the data collected accounts for 35% of the American population, and (b) it consists of information about demographics, tumor characteristics, and geographic locations. Based on the literarture review we found that there is a need for extensive research in these cancer types using a large amount of data like SEER national cancer registry. Our study contributes to the existing literature by assessing and listing down all the possible risk factors for cancer survivability and providing a better cancer survivability prediction model using SEER Lip, Oral cavity, and Pharyngeal cancer data. Our main objectives are :-( a) performing risk factor analysis to understand the variable co-relation with cancer survival, (b) building predictive models for assessing the five-year cancer survivability and, (c) evaluation and comparison of predictive model performances. 
 
@@ -9,34 +9,36 @@ In this project folder you can anticipate the our data processing, data analysis
   1. Data processing and dependent variable creation
   2. Data visualization using Tableau
   3. Data analysis using RStudio and SQL
-      * [Simple Logistic Regression](https://github.com/Research-Informatics-Lab/Oral-Cancer/blob/main/SEER_Oral_Cancer/Risk_factor_analysis/Uni_Regression.R)
-      * [Multiple Logistic Regression](https://github.com/Research-Informatics-Lab/Oral-Cancer/blob/main/SEER_Oral_Cancer/Risk_factor_analysis/Multi_Regression.R)
-      * 
+      * [Simple Logistic Regression](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/4586576adbf11800d07c2504787d39c9a2a516d7/source_code/Risk_factor_analysis/Uni_Regression.R)
+      * [Multiple Logistic Regression](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/4586576adbf11800d07c2504787d39c9a2a516d7/source_code/Risk_factor_analysis/Multi_Regression.R)
+      * Descriptive Statistcs Summary
+        * [Numerical](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/4586576adbf11800d07c2504787d39c9a2a516d7/source_code/Descriptive_statistics/descriptive_statistics_for_numerical_variables.sql)
+        * [Categorical](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/4586576adbf11800d07c2504787d39c9a2a516d7/source_code/Descriptive_statistics/descriptive_statistics_for_categorical_variables.sql)
   4. Predictive modelling and comparision of the model performance uisng different algorithms
       * **Decision Tree Classifier**
-        * [No sampling](https://github.com/Research-Informatics-Lab/Oral-Cancer/blob/main/SEER_Oral_Cancer/Machine_learning/DT.py)
-        * [Over sampling](https://github.com/Research-Informatics-Lab/Oral-Cancer/blob/main/SEER_Oral_Cancer/Machine_learning/DT_oversampling.py)
-        * [Under sampling](https://github.com/Research-Informatics-Lab/Oral-Cancer/blob/main/SEER_Oral_Cancer/Machine_learning/DT_undersampling.py)
+        * [No sampling](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/4586576adbf11800d07c2504787d39c9a2a516d7/source_code/Machine_learning/DT.py)
+        * [Over sampling](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/master/source_code/Machine_learning/DT_oversampling.py)
+        * [Under sampling](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/master/source_code/Machine_learning/DT_undersampling.py)
       * **Gaussian Naive Bayes Classifier**
-        * [No sampling](https://github.com/Research-Informatics-Lab/Oral-Cancer/blob/main/SEER_Oral_Cancer/Machine_learning/GNB.py)
+        * [No sampling](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/master/source_code/Machine_learning/GNB.py)
         * [Over sampling](https://github.com/Research-Informatics-Lab/Oral-Cancer/blob/main/SEER_Oral_Cancer/Machine_learning/GNB_oversampling.py)
-        * [Under sampling](https://github.com/Research-Informatics-Lab/Oral-Cancer/blob/main/SEER_Oral_Cancer/Machine_learning/GNB_undersampling.py)
+        * [Under sampling](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/master/source_code/Machine_learning/GNB_undersampling.py)
       * **K-Nearest Neighbors**
-        * [No sampling](https://github.com/Research-Informatics-Lab/Oral-Cancer/blob/main/SEER_Oral_Cancer/Machine_learning/KNN.py)
-        * [Over sampling](https://github.com/Research-Informatics-Lab/Oral-Cancer/blob/main/SEER_Oral_Cancer/Machine_learning/KNN_oversampling.py)
-        * [Under sampling](https://github.com/Research-Informatics-Lab/Oral-Cancer/blob/main/SEER_Oral_Cancer/Machine_learning/KNN_undersampling.py)
+        * [No sampling](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/master/source_code/Machine_learning/KNN.py)
+        * [Over sampling](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/master/source_code/Machine_learning/KNN_oversampling.py)
+        * [Under sampling](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/master/source_code/Machine_learning/KNN_undersampling.py)
       * **Logistic Regression Classifier**
-        * [No sampling](https://github.com/Research-Informatics-Lab/Oral-Cancer/blob/main/SEER_Oral_Cancer/Machine_learning/LR.py)
-        * [Over sampling](https://github.com/Research-Informatics-Lab/Oral-Cancer/blob/main/SEER_Oral_Cancer/Machine_learning/LR_over.py)
-        * [Under sampling](https://github.com/Research-Informatics-Lab/Oral-Cancer/blob/main/SEER_Oral_Cancer/Machine_learning/LR_under.py)
+        * [No sampling](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/master/source_code/Machine_learning/LR.py)
+        * [Over sampling](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/master/source_code/Machine_learning/LR_over.py)
+        * [Under sampling](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/master/source_code/Machine_learning/LR_under.py)
       * **Random Forest Classifier**
-        * [No sampling](https://github.com/Research-Informatics-Lab/Oral-Cancer/blob/main/SEER_Oral_Cancer/Machine_learning/RFC.py)
-        * [Over sampling](https://github.com/Research-Informatics-Lab/Oral-Cancer/blob/main/SEER_Oral_Cancer/Machine_learning/RFC_oversampling.py)
-        * [Under sampling](https://github.com/Research-Informatics-Lab/Oral-Cancer/blob/main/SEER_Oral_Cancer/Machine_learning/RFC_undersampling.py)
+        * [No sampling](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/master/source_code/Machine_learning/RFC.py)
+        * [Over sampling](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/master/source_code/Machine_learning/RFC_oversampling.py)
+        * [Under sampling](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/master/source_code/Machine_learning/RFC_undersampling.py)
       * **Support Vector Machine Classifier**
-        * [No sampling](https://github.com/Research-Informatics-Lab/Oral-Cancer/blob/main/SEER_Oral_Cancer/Machine_learning/SVM.py)
-        * [Over sampling](https://github.com/Research-Informatics-Lab/Oral-Cancer/blob/main/SEER_Oral_Cancer/Machine_learning/SVM_oversampling.py)
-        * [Under sampling](https://github.com/Research-Informatics-Lab/Oral-Cancer/blob/main/SEER_Oral_Cancer/Machine_learning/SVM_undersampling.py)
+        * [No sampling](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/master/source_code/Machine_learning/SVM.py)
+        * [Over sampling](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/master/source_code/Machine_learning/SVM_oversampling.py)
+        * [Under sampling](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/master/source_code/Machine_learning/SVM_undersampling.py)
 
 ### Project Files 
 1. **Folder- Data_processing**
