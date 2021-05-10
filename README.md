@@ -11,7 +11,7 @@ In this project folder you can anticipate the our data processing, data analysis
       * [Dummy Variables](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/master/source_code/Data_processing/dummies.py)
   3. Data visualization using Tableau
   4. Data analysis using RStudio and SQL
-      * [Simple Logistic Regression](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/4586576adbf11800d07c2504787d39c9a2a516d7/source_code/Risk_factor_analysis/Uni_Regression.R)
+      * [Simple Logistic Regression](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/master/source_code/Risk_factor_analysis/Simple_Regression.R)
       * [Multiple Logistic Regression](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/4586576adbf11800d07c2504787d39c9a2a516d7/source_code/Risk_factor_analysis/Multi_Regression.R)
       * Descriptive Statistcs Summary
         * [Numerical](https://github.com/Yaswitha-MU/SEER_oral_cancer_data_analysis/blob/4586576adbf11800d07c2504787d39c9a2a516d7/source_code/Descriptive_statistics/descriptive_statistics_for_numerical_variables.sql)
