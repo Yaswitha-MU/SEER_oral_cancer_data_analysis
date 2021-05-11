@@ -44,7 +44,7 @@ In this project folder you can anticipate the our data processing, data analysis
 
 ### Project Files 
 1. **Folder- Data_processing**
-    * datapreprocessing.py file- this file consists of script necessary for the data processing as per the requiremnets. Run this file priorly for data cleaning and creation of dependant variable (five year survival status). 
+    * preprocessing.py file- this file consists of script necessary for the data processing as per the requiremnets. Run this file priorly for data cleaning and creation of dependant variable (five year survival status). 
 2. **Folder- Risk_factor_analysis**
     * Uni_Regression.R- this file consists of script necessary for doing simple logistic statistical regression anlaysis and was written R programming language.By doing this analysis the co-relation among variables and be identified.
     * Multi_Regression.R- this file consists of script necessary for doing multiple logistic statistical regression anlaysis and was written R programming language.By doing this analysis the co-relation among variables and be identified.
